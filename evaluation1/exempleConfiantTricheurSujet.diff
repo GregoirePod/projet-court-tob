@@ -1,0 +1,31 @@
+1,2d0
+< Tricheur@tricheur
+< Allumettes restantes : 13
+3a2
+> Nombre d'allumettes restantes : 13
+8,9c6
+< Allumettes restantes : 10
+< 
+---
+> Nombre d'allumettes restantes : 10
+10a8
+> Tricheur prend 1 allumette.
+12,15c10
+< Tricheur prend 1 allumette
+< 
+< Allumettes restantes : 1
+< 
+---
+> Nombre d'allumettes restantes : 1
+17,21c12
+< 
+< Ordinateur prend 1 allumette
+< 
+< Tricheur a gagné !
+< 
+---
+> Ordinateur prend 1 allumette.
+23c14
+< 
+---
+> Tricheur a gagné !

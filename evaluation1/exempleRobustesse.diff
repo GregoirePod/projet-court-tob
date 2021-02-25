@@ -1,0 +1,104 @@
+1d0
+< Allumettes restantes : 13
+2a2
+> Nombre d'allumette restantes : 13
+3a4,6
+> Combien prenez-vous d'allumette ? Xavier prend 4 allumette.
+> Erreur ! Prise invalide : 4 (> 3)
+> Recommencez !
+5c8,24
+< Combien prenez vous d'allumette ?
+---
+> Nombre d'allumette restantes : 13
+> Au tour de Xavier.
+> Combien prenez-vous d'allumette ? Xavier prend 5 allumette.
+> Erreur ! Prise invalide : 5 (> 3)
+> Recommencez !
+> 
+> Nombre d'allumette restantes : 13
+> Au tour de Xavier.
+> Combien prenez-vous d'allumette ? Xavier prend 0 allumette.
+> Erreur ! Prise invalide : 0 (< 1)
+> Recommencez !
+> 
+> Nombre d'allumette restantes : 13
+> Au tour de Xavier.
+> Combien prenez-vous d'allumette ? Xavier prend -1 allumette.
+> Erreur ! Prise invalide : -1 (< 1)
+> Recommencez !
+6a26,32
+> Nombre d'allumette restantes : 13
+> Au tour de Xavier.
+> Combien prenez-vous d'allumette ? Xavier prend 3 allumette.
+> 
+> Nombre d'allumette restantes : 10
+> Au tour de Ordinateur.
+> Ordinateur prend 1 allumette.
+8c34,36
+< Erreur : Prise invalide : 4 (> 3)
+---
+> Nombre d'allumette restantes : 9
+> Au tour de Xavier.
+> Combien prenez-vous d'allumette ? Xavier prend 3 allumette.
+10c38,40
+< Allumettes restantes : 13
+---
+> Nombre d'allumette restantes : 6
+> Au tour de Ordinateur.
+> Ordinateur prend 1 allumette.
+11a42
+> Nombre d'allumette restantes : 5
+12a44
+> Combien prenez-vous d'allumette ? Xavier prend 1 allumette.
+14c46,54
+< Combien prenez vous d'allumette ?
+---
+> Nombre d'allumette restantes : 4
+> Au tour de Ordinateur.
+> Ordinateur prend 3 allumette.
+> 
+> Nombre d'allumette restantes : 1
+> Au tour de Xavier.
+> Combien prenez-vous d'allumette ? Xavier prend 4 allumette.
+> Erreur ! Prise invalide : 4 (> 1)
+> Recommencez !
+16,24c56,84
+< Exception in thread "main" java.util.NoSuchElementException
+< 	at java.base/java.util.Scanner.throwFor(Scanner.java:937)
+< 	at java.base/java.util.Scanner.next(Scanner.java:1594)
+< 	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+< 	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+< 	at allumette.StrategieHumain.getPrise(StrategieHumain.java:12)
+< 	at allumette.Joueur.getPrise(Joueur.java:23)
+< 	at allumette.Arbitre.arbitrer(Arbitre.java:38)
+< 	at allumette.Partie.main(Partie.java:37)
+---
+> Nombre d'allumette restantes : 1
+> Au tour de Xavier.
+> Combien prenez-vous d'allumette ? Xavier prend 3 allumette.
+> Erreur ! Prise invalide : 3 (> 1)
+> Recommencez !
+> 
+> Nombre d'allumette restantes : 1
+> Au tour de Xavier.
+> Combien prenez-vous d'allumette ? Xavier prend 2 allumette.
+> Erreur ! Prise invalide : 2 (> 1)
+> Recommencez !
+> 
+> Nombre d'allumette restantes : 1
+> Au tour de Xavier.
+> Combien prenez-vous d'allumette ? Xavier prend 0 allumette.
+> Erreur ! Prise invalide : 0 (< 1)
+> Recommencez !
+> 
+> Nombre d'allumette restantes : 1
+> Au tour de Xavier.
+> Combien prenez-vous d'allumette ? Xavier prend -1 allumette.
+> Erreur ! Prise invalide : -1 (< 1)
+> Recommencez !
+> 
+> Nombre d'allumette restantes : 1
+> Au tour de Xavier.
+> Combien prenez-vous d'allumette ? Xavier prend 1 allumette.
+> Xavier a perdu !
+> Ordinateur a gagné !

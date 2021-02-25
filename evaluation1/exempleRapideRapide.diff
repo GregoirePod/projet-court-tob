@@ -1,0 +1,36 @@
+1d0
+< Allumettes restantes : 13
+2a2
+> Nombre d'allumettes restantes : 13
+7,8c6
+< Allumettes restantes : 10
+< 
+---
+> Nombre d'allumettes restantes : 10
+13,14c10
+< Allumettes restantes : 7
+< 
+---
+> Nombre d'allumettes restantes : 7
+19,20c14
+< Allumettes restantes : 4
+< 
+---
+> Nombre d'allumettes restantes : 4
+25,26c18
+< Allumettes restantes : 1
+< 
+---
+> Nombre d'allumettes restantes : 1
+28,32c20
+< 
+< R1 prend 1 allumette
+< 
+< R2 a gagné !
+< 
+---
+> R1 prend 1 allumette.
+34c22
+< 
+---
+> R2 a gagné !

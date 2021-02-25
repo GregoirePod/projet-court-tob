@@ -1,0 +1,101 @@
+File ./allumettes/ConfigurationException.java: 21 tokens, 16 lines
+File ./allumettes/Jeu.java: 23 tokens, 21 lines
+File ./allumettes/Arbitre.java: 358 tokens, 67 lines
+File ./allumettes/Strategie.java: 13 tokens, 7 lines
+File ./allumettes/StrategieTricheur.java: 55 tokens, 18 lines
+File ./allumettes/OperationInterditeException.java: 19 tokens, 11 lines
+File ./allumettes/Partie.java: 410 tokens, 103 lines
+File ./allumettes/CoupInvalideException.java: 51 tokens, 28 lines
+File ./allumettes/Joueur.java: 74 tokens, 25 lines
+File ./allumettes/StrategieHumain.java: 49 tokens, 16 lines
+File ./allumettes/Jeu_Allumettes.java: 149 tokens, 37 lines
+File ./allumettes/JeuProxy.java: 78 tokens, 25 lines
+File ./allumettes/StrategieNaif.java: 75 tokens, 25 lines
+File ./allumettes/StrategieRapide.java: 50 tokens, 17 lines
+File ./allumettes/StrategieExpert.java: 82 tokens, 23 lines (not NL-terminated)
+Total input: 15 files (15 new, 0 old), 1507 tokens
+
+./allumettes/Arbitre.java: line 57-60 [34]
+./allumettes/Arbitre.java: line 61-64
+< 		if (i%2 == 1 ) {
+< 			System.out.println(this.joueur2.getNom() + " a perdu !\n");
+< 			System.out.println(this.joueur1.getNom() + " a gagné !\n");
+< 		} 
+---
+> 		else {
+> 			System.out.println(this.joueur2.getNom() + " a gagné !\n");
+> 			System.out.println(this.joueur1.getNom() + " a perdu !\n");
+> 		}
+
+./allumettes/Arbitre.java: line 1-15 [33]
+./allumettes/Joueur.java: line 1-11
+< package allumettes;
+< 
+< public class Arbitre {
+< 	
+< 	private Joueur joueur1;
+< 	private Joueur joueur2;
+< 	
+< 	/** Construire un Arbitre à partir de deux joueurs qui vont s'affronter.
+< 	 * @param j1 le premier joueur
+< 	 * @param j2 le deuxième joueur 
+< 	 */
+< 	public Arbitre(Joueur j1, Joueur j2) {
+< 		this.joueur1 = j1;
+< 		this.joueur2 = j2;
+< 	}
+---
+> package allumettes;
+> 
+> public class Joueur {
+> 	private String nom; // nom du joueur 
+> 	private Strategie strategie; //stratégie du joueur
+> 	
+> 	
+> 	public Joueur (String nv_nom, Strategie nv_strat ) {
+> 		this.nom = nv_nom;
+> 		this.strategie = nv_strat;
+> 	}
+
+./allumettes/Arbitre.java: line 48-50 [28]
+./allumettes/Partie.java: line 39-41
+< 			} catch (CoupInvalideException e) {
+< 				System.out.println();
+< 				System.out.println("Erreur : " + e.getMessage());
+---
+> 		} catch (ConfigurationException e) {
+> 			System.out.println();
+> 			System.out.println("Erreur : " + e.getMessage());
+
+./allumettes/StrategieRapide.java: line 1-8 [28]
+./allumettes/StrategieExpert.java: line 1-10
+< package allumettes;
+< 
+< public class StrategieRapide implements Strategie {
+< 
+< 	@Override
+< 	public int getPrise(Jeu jeu) {
+< 		int prise;
+< 		if (jeu.getNombreAllumettes() >= 3) {
+---
+> package allumettes;
+> 
+> import java.util.Random;
+> 
+> public class StrategieExpert implements Strategie {
+> 
+> 	@Override
+> 	public int getPrise(Jeu jeu) {
+> 		int prise; 
+> 		if (jeu.getNombreAllumettes() > 4) {
+
+./allumettes/Arbitre.java: line 51-53 [27]
+./allumettes/Partie.java: line 39-41
+< 			} catch (OperationInterditeException e) {
+< 				System.out.println();
+< 				System.out.println("Partie abandonnée car " + joueur.getNom() + " a triché ! \n");
+---
+> 		} catch (ConfigurationException e) {
+> 			System.out.println();
+> 			System.out.println("Erreur : " + e.getMessage());
+

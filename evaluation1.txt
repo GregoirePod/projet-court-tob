@@ -1,0 +1,50 @@
+Date de l'évaluation : samedi 21 mars 2020, 21:50:55 (UTC+0100)
+
+!!! Il est interdit de changer CoupInvalideException.java (voir evaluation1/CoupInvalideException.java.diff)
+
+Nombre de similitudes (voir evaluation1/sim_java.txt) : 5
+Les similitudes indiquent généralement du code à restructurer.
+
+Erreurs checkstyle (différentes/types) : 31/13	(voir evaluation1//checkstyle.log)
+
+Utilisation de 'Scanner' : ok
+	./allumettes/StrategieHumain.java:		Scanner scan = new Scanner(System.in);
+
+Utilisation de 'split' : ok mais un seul split devrait suffir !  Code à restructurer...
+	./allumettes/Partie.java:			String[] j1 = args[c + 0].split("@");
+	./allumettes/Partie.java:			String[] j2 = args[c + 1].split("@");
+
+Utilisation de 'Random' : ok
+	./allumettes/StrategieNaif.java:import java.util.Random;
+	./allumettes/StrategieNaif.java:		Random r = new Random();
+	./allumettes/StrategieExpert.java:import java.util.Random;
+	./allumettes/StrategieExpert.java:			Random r = new Random();
+
+Utilisation de '3' : la constante Jeu.PRISE_MAX doit être utilisée
+	./allumettes/Partie.java:			if (args.length == 3) {
+	./allumettes/StrategieNaif.java:				prise = r.nextInt(3) + 1;
+	./allumettes/StrategieRapide.java:		if (jeu.getNombreAllumettes() >= 3) {
+	./allumettes/StrategieRapide.java:		    prise = 3;
+	./allumettes/StrategieExpert.java:			prise = r.nextInt(3) + 1;
+
+Utilisation de 'System.exit' : INTERDITE d'utiliser System.exit(), sauf celui fourni dans Partie.java
+	./allumettes/Arbitre.java:				System.exit(1);
+	./allumettes/Partie.java:			System.exit(1);
+
+Compilation de Partie.java : OK.
+Compilation de Arbitre.java : OK.
+Test exemplePresqueSujet : NON CONFORME (voir evaluation1/exemplePresqueSujet.diff)
+Test exempleTricheurSujet : NON CONFORME (voir evaluation1/exempleTricheurSujet.diff)
+Test exempleConfiantTricheurSujet : NON CONFORME (voir evaluation1/exempleConfiantTricheurSujet.diff)
+Test exempleRobustesse : NON CONFORME (voir evaluation1/exempleRobustesse.diff)
+Test exempleRapideRapide : NON CONFORME (voir evaluation1/exempleRapideRapide.diff)
+Test exempleTricheurExpert : NON CONFORME (voir evaluation1/exempleTricheurExpert.diff)
+
+On recommence avec les classes/interfaces fournies : Jeu ConfigurationException CoupInvalideException
+Compilation de Partie.java : OK.
+Compilation de Arbitre.java : OK.
+
+Vérification du respect du diagramme de classe...
+Test FormeTest : OK (2 tests)	(voir evaluation1/FormeTest.log)
+
+Aucune classe de test (fichier *Test.java) !
